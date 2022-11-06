@@ -1,6 +1,9 @@
 <h2>{{ post?.title}}</h2>
 <img src="{{ post?.imagePath}}" class="img-responsive"/>
 <p>{{ post?.description}}</p>
+
 <p>Author: {{ post?.author}}</p>
 <p>Date: {{post?.date }}</p>
-<button> Edit </button> <button>Delete</button>
+<button> Edit </button> <button (click)="onDelete()">Delete</button>
+
+<p>Post component html</p>

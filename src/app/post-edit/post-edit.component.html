@@ -1,1 +1,14 @@
-<p>post-edit works!</p>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <label>Title</label><br>
+  <input type="text" placeholder="Title" formControlName="title">
+  <br>
+
+  <label>Description</label><br>
+  <input type="text" placeholder="Description"formControlName="description">
+  <br>
+
+  <label>Image Path</label><br>
+  <input type="text" placeholder="Image Path" formControlName="imagePath"><br>
+
+  <button type="submit">Save</button>
+</form>
